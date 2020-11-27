@@ -1,6 +1,6 @@
 # SerenityBDD, Cucumber, and Multiple Devices
 
-By Default, Serenity does not provide a way to assign a specific driver configuration to a specific actor when using Cucumber
+By Default, Serenity does not provide a way to assign a specific driver configuration to a specific actor when using Cucumber.
 For example, when testing a chat application. One user is on Desktop, the other is on Mobile.
 This project shows my approach to using multiple devices with SerenityBDD.
 
