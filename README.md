@@ -4,7 +4,7 @@ By Default, Serenity does not provide a way to assign a specific driver configur
 For example, when testing a chat application. One user is on Desktop, the other is on Mobile.
 This project shows my approach to using multiple devices with SerenityBDD.
 
-##Serenity.conf
+## Serenity.conf
 I've added a new section in serenity.conf called devices.
 This is a collection of driver configurations. Each entry can contain any driver configs you would normally place on the root of serenity.conf
 
@@ -43,7 +43,7 @@ roles.{roleName}.device = {deviceName}
 
 e.g. `roles.sandra.device = pixel3`
 
-##DeviceConfiguration
+## DeviceConfiguration
 
 This is where the magic happens. This object reads the device config from serenity.conf and returns a WebDriver
 ```
@@ -71,7 +71,7 @@ I have a Parameter definition that allows me to easily convert my actor names to
 
 When this is called it will use the appropriately configured driver based on the name
 
-##Putting it all together
+## Putting it all together
 
 My Feature file like like this:
 ```
@@ -85,7 +85,7 @@ My Feature file like like this:
 The specified actor names are important as they determine the driver to be used for that step
 these names can be whatever you've specified under serenity.conf under roles.{actorName}.device
 
-##Notes
+## Notes
 
 - If you're using remote devices be sure to place webdriver.remote.url on the root of serenity.conf
 - If you're using browserstack be sure to place the user, key, and server configs on the root of serenity.conf
