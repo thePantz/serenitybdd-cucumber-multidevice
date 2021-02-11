@@ -73,7 +73,7 @@ When this is called it will use the appropriately configured driver based on the
 
 ## Putting it all together
 
-My Feature file like like this:
+My Feature file is like this:
 ```
   Scenario: Sandra messages Sergey
     Given Sergey is a non-registered user
